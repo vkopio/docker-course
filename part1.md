@@ -75,3 +75,32 @@ Give me the password: basics
 You found the correct password. Secret message is:
 "This is the secret message"
 ```
+
+# 1.4
+```console
+kopio@kopio-ThinkPad-T450s:~$ docker run -d --name container devopsdockeruh/exec_bash_exercise
+Unable to find image 'devopsdockeruh/exec_bash_exercise:latest' locally
+latest: Pulling from devopsdockeruh/exec_bash_exercise
+741437d97401: Pull complete 
+34d8874714d7: Pull complete 
+0a108aa26679: Pull complete 
+7f0334c36886: Pull complete 
+65c95cb8b3be: Pull complete 
+a36b708560f8: Pull complete 
+4090f912e6c7: Pull complete 
+ce5fe2607c2e: Pull complete 
+9400f5f657d6: Pull complete 
+c4919883f7fa: Pull complete 
+Digest: sha256:c463832132d1fb0b8b3b60348a6fc36fda7512a4ef2d1050e8bea7b6a6d7a2f3
+Status: Downloaded newer image for devopsdockeruh/exec_bash_exercise:latest
+8b7b4ae55c1884dde187e9b6a1a54c027b6d490f8fe7924100b595a6196a1618
+kopio@kopio-ThinkPad-T450s:~$ docker exec -it container bash
+root@8b7b4ae55c18:/usr/app# tail -f ./logs.txt
+"Docker is easy"
+Thu, 22 Aug 2019 13:05:03 GMT
+Thu, 22 Aug 2019 13:05:06 GMT
+Thu, 22 Aug 2019 13:05:09 GMT
+Thu, 22 Aug 2019 13:05:12 GMT
+Secret message is:
+"Docker is easy"
+```
