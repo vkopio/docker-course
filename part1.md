@@ -27,3 +27,34 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 5dc8d4aba85b        nginx               "nginx -g 'daemon of…"   2 minutes ago        Exited (0) 25 seconds ago                       amazing_thompson
 6ea6846fb4f4        nginx               "nginx -g 'daemon of…"   2 minutes ago        Up 2 minutes                80/tcp              laughing_archimedes
 ```
+
+# 1.2
+```console
+kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course$ d stop 6
+6
+kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course$ d container prune
+WARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+1e2580305afcd471d083eb86e360265e1a739b8be5c91de3fba215c84b76abe0
+5dc8d4aba85b41420a4986ed6bb1916145646af8b9f0c8896e7632c6c2ef23e2
+6ea6846fb4f4c5547bdaadacb69d0f91eedf262c653bea07187ee4d010712878
+
+Total reclaimed space: 0B
+kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course$ d ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course$ d system prune
+WARNING! This will remove:
+        - all stopped containers
+        - all networks not used by at least one container
+        - all dangling images
+        - all build cache
+Are you sure you want to continue? [y/N] y
+Deleted Images:
+# Many
+kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course$ d images
+# Some personal stuff left
+kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course$ d rmi -f 5a 50 fc 35
+kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course$ d images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+```
