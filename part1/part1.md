@@ -148,6 +148,7 @@ docker run clock
 ```
 
 # 1.7
+[Files](./1.7)
 ```console
 kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1/1-7$ docker build -t curler .
 kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1/1-7$ docker run -it curler
@@ -161,3 +162,19 @@ Searching..
 <h1>Moved Permanently</h1>
 <p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
 </body></html>
+```
+
+# 1.8
+```console
+kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1$ touch logs.txt
+kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1$ sudo docker run -v $(pwd)/logs.txt:/usr/app/logs.txt devopsdockeruh/first_volume_exercise
+kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1$ cat logs.txt 
+Fri, 23 Aug 2019 14:33:46 GMT
+Fri, 23 Aug 2019 14:33:49 GMT
+Fri, 23 Aug 2019 14:33:52 GMT
+Fri, 23 Aug 2019 14:33:55 GMT
+Secret message is:
+"Volume bind mount is easy"
+Fri, 23 Aug 2019 14:34:01 GMT
+Fri, 23 Aug 2019 14:34:04 GMT
+```
