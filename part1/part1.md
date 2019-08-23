@@ -128,3 +128,21 @@ Searching..
 <p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
 </body></html>
 ```
+
+# 1.6
+[Dockerfile](./1-6/Dockerfile)
+
+Finding the correct command:
+```console
+docker run devopsdockeruh/overwrite_cmd_exercise
+docker run devopsdockeruh/overwrite_cmd_exercise -c
+```
+Building and running:
+```console
+docker build -t clock .
+docker run clock
+1
+2
+3
+# ...
+```
