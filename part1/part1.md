@@ -188,3 +188,10 @@ Ports configured correctly!!
 
 # 1.10
 [Dockerfile](./1-10/frontend-example-docker/Dockerfile)
+
+# 1.11
+[Dockerfile](./1-11/backend-example-docker/Dockerfile)
+```console
+kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1/1-11/backend-example-docker$ docker build -t node-backend .
+kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1/1-11/backend-example-docker$ docker run -p 8000:8000 -v $(pwd)/logs.txt:/app/logs.txt node-backend
+```
