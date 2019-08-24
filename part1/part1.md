@@ -178,3 +178,10 @@ Secret message is:
 Fri, 23 Aug 2019 14:34:01 GMT
 Fri, 23 Aug 2019 14:34:04 GMT
 ```
+
+# 1.9
+```console
+kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1$ docker run -p 8080:80 devopsdockeruh/ports_exercise
+kopio@kopio-ThinkPad-T450s:~$ curl localhost:8080
+Ports configured correctly!!
+```
