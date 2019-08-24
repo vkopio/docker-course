@@ -10,6 +10,8 @@ WORKDIR app/
 
 COPY . .
 
+ENV FRONT_URL=http://localhost:5000
+
 RUN npm install
 
 EXPOSE 8000

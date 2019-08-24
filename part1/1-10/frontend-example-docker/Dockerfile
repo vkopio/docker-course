@@ -12,6 +12,8 @@ RUN npm install -g serve
 
 COPY . .
 
+ENV API_URL=http://localhost:8000
+
 RUN npm install
 RUN npm run build
 
