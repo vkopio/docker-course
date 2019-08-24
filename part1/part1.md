@@ -185,3 +185,6 @@ kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1$ docker run -p 80
 kopio@kopio-ThinkPad-T450s:~$ curl localhost:8080
 Ports configured correctly!!
 ```
+
+# 1.10
+[Dockerfile](./1-10/frontend-example-docker/Dockerfile)
