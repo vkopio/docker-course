@@ -210,3 +210,10 @@ kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1/1-10/frontend-exa
 kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1/1-13/spring-example-project$ docker build -t spring-example-project .
 kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1/1-13/spring-example-project$ docker run -p 8080:8080 spring-example-project
 ```
+
+# 1.14
+[Dockerfile](./1-14/rails-example-project/Dockerfile)
+```console
+kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1/1-13/rails-example-project$ docker build -t rails-example-project .
+kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1/1-13/rails-example-project$ docker run -p 3000:3000 rails-example-project
+```
