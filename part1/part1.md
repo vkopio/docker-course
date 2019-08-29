@@ -217,3 +217,13 @@ kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1/1-13/spring-examp
 kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1/1-13/rails-example-project$ docker build -t rails-example-project .
 kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1/1-13/rails-example-project$ docker run -p 3000:3000 rails-example-project
 ```
+
+# 1.15
+Python-template:
+[Github](https://github.com/osakunta/python-template),
+[Docker Hub](https://cloud.docker.com/u/osakunta/repository/docker/osakunta/python-template)
+
+Run the container with:
+```console
+docker run osakunta/python-template
+```
