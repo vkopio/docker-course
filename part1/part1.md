@@ -206,3 +206,7 @@ kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1/1-10/frontend-exa
 
 # 1.13
 [Dockerfile](./1-13/spring-example-project/Dockerfile)
+```console
+kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1/1-13/spring-example-project$ docker build -t spring-example-project .
+kopio@kopio-ThinkPad-T450s:~/git/yliopisto/docker-course/part1/1-13/spring-example-project$ docker run -p 8080:8080 spring-example-project
+```
