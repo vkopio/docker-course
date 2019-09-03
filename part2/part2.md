@@ -48,3 +48,6 @@ Ports configured correctly!!
 
 # 2.6
 [docker-compose.yml](./2-3_2-5_2-6/docker-compose.yml)
+
+# 2.7
+[docker-compose.yml](./2-7/docker-compose.yml)
