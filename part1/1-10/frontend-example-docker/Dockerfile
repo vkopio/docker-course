@@ -17,6 +17,6 @@ ENV API_URL=http://localhost:8000
 RUN npm install
 RUN npm run build
 
-EXPOSE 8080
+EXPOSE 5000
 
 CMD ["serve", "-s", "-l", "5000", "dist"]
