@@ -12,8 +12,25 @@ logger-container | Wrote to file /usr/app/logs.txt
 logger-container | Wrote to file /usr/app/logs.txt
 ^CGracefully stopping... (press Ctrl+C again to force)
 Stopping logger-container ... done
+
 ➜  2-1 git:(master) ✗ cat logs.txt 
 Tue, 03 Sep 2019 11:05:58 GMT
 Tue, 03 Sep 2019 11:06:01 GMT
 Tue, 03 Sep 2019 11:06:04 GMT
+```
+
+# 2.2
+[docker-compose.yml](./2-2/docker-compose.yml)
+```console
+➜  2-2 git:(master) ✗ dc up
+Creating 2-2_web_1 ... done
+Attaching to 2-2_web_1
+web_1  | 
+web_1  | > ports_exercise@1.0.0 start /usr/app
+web_1  | > node index.js
+web_1  | 
+web_1  | Listening on port 80, this means inside of the container. Use -p to map the port to a port of your local machine.
+
+➜  2-2 git:(master) ✗ curl localhost:8000
+Ports configured correctly!!
 ```
