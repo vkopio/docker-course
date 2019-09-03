@@ -36,9 +36,12 @@ Ports configured correctly!!
 ```
 
 # 2.3
-[docker-compose.yml](./2-3/docker-compose.yml)
+[docker-compose.yml](./2-3_2-5/docker-compose.yml)
 
 # 2.4
 ```console
 ➜  scaling-exercise git:(master) dc up --scale compute=3
 ```
+
+# 2.5
+[docker-compose.yml](./2-3_2-5/docker-compose.yml)
