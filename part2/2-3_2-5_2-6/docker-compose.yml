@@ -1,0 +1,28 @@
+version: '3.5'
+services:
+    frontend:
+      build: ../../part1/1-10/frontend-example-docker
+      ports:
+        - 5000:5000
+    backend:
+      build: ../../part1/1-11/backend-example-docker
+      ports:
+        - 8000:8000
+      environment:
+        - REDIS=redis
+        - DB_USERNAME=postgres
+        - DB_PASSWORD=postgres
+        - DB_HOST=postgres
+      depends_on:
+      - postgres
+    redis:
+      image: redis
+    postgres:
+      image: postgres
+      environment:
+        - POSTGRES_PASSWORD=postgres
+      volumes:
+        - database:/var/lib/postgresql/data
+
+volumes:
+  database:

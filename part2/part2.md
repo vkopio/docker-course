@@ -36,7 +36,7 @@ Ports configured correctly!!
 ```
 
 # 2.3
-[docker-compose.yml](./2-3_2-5/docker-compose.yml)
+[docker-compose.yml](./2-3_2-5_2-6/docker-compose.yml)
 
 # 2.4
 ```console
@@ -44,4 +44,7 @@ Ports configured correctly!!
 ```
 
 # 2.5
-[docker-compose.yml](./2-3_2-5/docker-compose.yml)
+[docker-compose.yml](./2-3_2-5_2-6/docker-compose.yml)
+
+# 2.6
+[docker-compose.yml](./2-3_2-5_2-6/docker-compose.yml)
