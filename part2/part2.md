@@ -34,3 +34,6 @@ web_1  | Listening on port 80, this means inside of the container. Use -p to map
 ➜  2-2 git:(master) ✗ curl localhost:8000
 Ports configured correctly!!
 ```
+
+# 2.3
+[docker-compose.yml](./2-3/docker-compose.yml)
