@@ -10,7 +10,7 @@ WORKDIR app/
 
 COPY . .
 
-ENV FRONT_URL=http://localhost:5000
+ENV FRONT_URL=http://localhost/
 
 RUN npm install
 
