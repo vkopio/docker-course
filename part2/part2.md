@@ -52,5 +52,5 @@ Ports configured correctly!!
 # 2.7
 [docker-compose.yml](./2-7/docker-compose.yml)
 
-# 2.8
+# 2.8 ja 2.10
 [docker-compose.yml](./2-8/docker-compose.yml)
