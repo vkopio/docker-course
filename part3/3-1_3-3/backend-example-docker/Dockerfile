@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-WORKDIR app/
+ENV FRONT_URL=http://localhost/
 
 RUN apt-get update \
     && apt-get install -y curl \
@@ -8,11 +8,16 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y nodejs \
     && apt-get purge -y --auto-remove curl \
-    && rm -rf /var/lib/apt/lists/* 
+    && rm -rf /var/lib/apt/lists/* \
+    && useradd -m app
 
-ENV FRONT_URL=http://localhost/
+WORKDIR app/
 
 COPY . .
+
+RUN chown -R app:app .
+
+USER app
 
 RUN npm install
 

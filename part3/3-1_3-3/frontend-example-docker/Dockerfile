@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-WORKDIR app/
+ENV API_URL=http://localhost/api/
 
 RUN apt-get update \
     && apt-get install -y curl \
@@ -9,11 +9,16 @@ RUN apt-get update \
     && apt-get install -y nodejs \
     && npm install -g serve \
     && apt-get purge -y --auto-remove curl \
-    && rm -rf /var/lib/apt/lists/* 
+    && rm -rf /var/lib/apt/lists/* \
+    && useradd -m app
 
-ENV API_URL=http://localhost/api/
+WORKDIR app/
 
 COPY . .
+
+RUN chown -R app:app .
+
+USER app
 
 RUN npm install \
     && npm run build
