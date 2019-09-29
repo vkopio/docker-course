@@ -8,7 +8,7 @@
 - [3-3_backend](./3-1_3-3/backend-example-docker/Dockerfile)
 - [3-3_frontend](./3-1_3-3/frontend-example-docker/Dockerfile)
 
-# 3.1
+# 3.4
 |Image                                                           |Before|After|
 |----------------------------------------------------------------|-----:|----:|
 |[3-3_backend](./3-1_3-3_3-4/backend-example-docker/Dockerfile)  |251MB |135MB|
