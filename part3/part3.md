@@ -16,3 +16,7 @@
 
 # 3.5
 - [3-5_frontend](./3-1_3-3_3-4_3-5/frontend-example-docker/Dockerfile)
+
+# 3.6
+- [Dockerfile](/part1/1-14/rails-example-project/Dockerfile) 1.06GB
+- [Dockerfile.2](/part1/1-14/rails-example-project/Dockerfile.2) 359MB
