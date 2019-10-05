@@ -4,6 +4,9 @@
 |[3-1_backend](./3-1_3-3_3-4_3-5/backend-example-docker/Dockerfile)  |280MB |250MB|
 |[3-1_frontend](./3-1_3-3_3-4_3-5/frontend-example-docker/Dockerfile)|409MB |379MB|
 
+# 3.2
+- [Dockerfile](./3-2/Dockerfile)
+
 # 3.3
 - [3-3_backend](./3-1_3-3_3-4_3-5/backend-example-docker/Dockerfile)
 - [3-3_frontend](./3-1_3-3_3-4_3-5/frontend-example-docker/Dockerfile)
