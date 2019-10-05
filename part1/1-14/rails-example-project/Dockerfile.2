@@ -8,8 +8,7 @@ WORKDIR app/
 
 COPY . .
 
-RUN chown -R app:app . \
-    && bundle install \
+RUN bundle install \
     && rails db:migrate \
     && chown -R app:app .
 
