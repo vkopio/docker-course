@@ -23,3 +23,6 @@
 # 3.6
 - [Dockerfile](/part1/1-14/rails-example-project/Dockerfile) 1.06GB
 - [Dockerfile.2](/part1/1-14/rails-example-project/Dockerfile.2) 359MB
+
+# 3.7
+- [Article](article.md)
